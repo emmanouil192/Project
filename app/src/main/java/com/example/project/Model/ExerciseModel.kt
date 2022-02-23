@@ -2,10 +2,6 @@ package com.example.project.model
 
 class ExerciseModel(
     val exercise_name: String,
-    val exercise_icon: String
+    val exercise_count: String,
+    val exercise_wait: Int
     ) {}
-
-class ExerciseAdd(
-    val exercise_name: String,
-    val exercise_icon: String
-) {}
