@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Project</string>
+    <string name="title_activity_exercise">ExerciseActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string-array name="types_of_exercise">
+        <item>Chest</item>
+        <item>Shoulders</item>
+        <item>Abs</item>
+        <item>Legs</item>
+        <item>Back</item>
+    </string-array>
+
 </resources>

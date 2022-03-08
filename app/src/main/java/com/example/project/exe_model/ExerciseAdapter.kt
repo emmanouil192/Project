@@ -1,4 +1,4 @@
-package com.example.project.model
+package com.example.project.exe_model
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,7 +8,7 @@ import com.example.project.R
 import kotlinx.android.synthetic.main.exercise_layout.view.*
 
 class ExerciseAdapter(
-    private val exercises: MutableList<ExerciseModel>
+    val exercises: MutableList<ExerciseModel>
 ) : RecyclerView.Adapter<ExerciseAdapter.ExerciseViewHolder>() {
 
     class ExerciseViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)
@@ -27,6 +27,11 @@ class ExerciseAdapter(
         notifyItemInserted(exercises.size - 1)
     }
 
+    fun clear() {
+        exercises.clear()
+        notifyDataSetChanged()
+    }
+
     override fun onBindViewHolder(holder: ExerciseViewHolder, position: Int) {
         val exercise: ExerciseModel = exercises[position]
         holder.itemView.exename.text = exercise.exercise_name
@@ -36,5 +41,9 @@ class ExerciseAdapter(
 
     override fun getItemCount(): Int {
         return exercises.size
+    }
+
+    fun retlist(): MutableList<ExerciseModel>{
+        return exercises
     }
 }

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExerciseActivity"
+    android:background="@color/light_blue_600">
+    <Button
+        android:id="@+id/PrevButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toTopOf="@id/exe_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.8"
+        android:backgroundTint="#E5E5E0"
+        android:text="Previous"
+        android:textColor="@color/black">
+    </Button>
+
+    <TextView
+        android:id="@+id/exe_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text = "Exercise Name"
+        app:layout_constraintBottom_toTopOf="@id/exe_pic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.8"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="40sp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/exe_pic"
+        android:layout_width="105dp"
+        android:layout_height="160dp"
+        android:src="@drawable/squat1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.6">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/exe_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text = "Exercise Time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exe_pic"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.2"
+        android:gravity="center"
+        android:textColor="#FF2F2F"
+        android:textSize="40sp">
+    </TextView>
+    <Button
+        android:id="@+id/NextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exe_time"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.2"
+        android:backgroundTint="#E5E5E0"
+        android:text="Next"
+        android:textColor="@color/black">
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
