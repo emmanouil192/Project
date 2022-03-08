@@ -40,8 +40,6 @@ class ChooseExercise : AppCompatActivity(), ClickListener {
         exeView.adapter = exeAdapter
         exeView.layoutManager = LinearLayoutManager(this)
 
-        val scr: Scroller
-
 
         val adapter = ArrayAdapter.createFromResource(this, R.array.types_of_exercise, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item)
         adapter.setDropDownViewResource(androidx.appcompat.R.layout.support_simple_spinner_dropdown_item)
